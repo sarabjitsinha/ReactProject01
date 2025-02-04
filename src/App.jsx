@@ -5,21 +5,20 @@ import Header from "./components/Header";
 import ToDoitem from "./components/ToDoitem";
 import Footer from "./components/Footer";
 
-function App(){
-  const [task,settask]=useState('');
-  const [count,setcount]=useState(0)
-  const [flag,setflag]=useState(false)
+  function App(){
+    const [task,settask]=useState('');
+    
+    const [flag,setflag]=useState(false)
 
   function handleChange(e){
-    setflag((flag)=>flag=false)
-    const val=e.target.value;
-    settask(val.toUpperCase())
+      setflag((flag)=>flag=false)
+      const val=e.target.value;
+      settask(val.toUpperCase())
     }
 
   
   function handleadd(){
       setflag((flag)=>flag=true)
-      setcount(count=>count+1)
       document.getElementById("task").setAttribute("disabled","disabled")  
   }
 
@@ -33,8 +32,8 @@ function App(){
          <input type="text" name="task" id="task" placeholder="Enter The task" className="bg-white w-96" onChange={handleChange}/>
          <button type="button" className="bg-fuchsia-500 w-24 rounded-4xl" onClick={handleadd}>Add </button>
        </div>
-       
-        <ToDoitem taskitem={task} adder={flag} counter={count}/>   
+      
+        <ToDoitem taskitem={task} adder={flag} />    
              
       <Footer/> 
     </div>
