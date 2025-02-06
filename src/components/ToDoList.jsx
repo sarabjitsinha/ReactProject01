@@ -8,11 +8,11 @@ function ToDoList(props){
     const [todotasks,settodotasks]=useState(props.list)
     const  [updatflag,setupdateflag]=useState(false)
     function handlechange(e){
-        console.log(e);
+        
         e.target.setAttribute('disabled','disabled')
         let st=e.target.parentElement.parentElement
         let mt=st.innerText;
-       let val=mt.split("")
+        let val=mt.split("")
         for (let item of todotasks){
             if(item.id==val[0]){
                 item.status="Completed"
