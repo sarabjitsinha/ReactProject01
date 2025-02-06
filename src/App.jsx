@@ -24,17 +24,17 @@ import Footer from "./components/Footer";
 
   
   
-  return(
+  return (
     
       <div className="tododiv">
       <Header/>
       <div className="mt-10">
-         <input type="text" name="task" id="task" placeholder="Enter The task" className="bg-white w-96" onChange={handleChange}/>
-         <button type="button" className="bg-fuchsia-500 w-24 rounded-4xl" onClick={handleadd}>Add </button>
+         <input type="text" name="task"  id="task" placeholder="Enter The task" className="bg-white w-96" onChange={handleChange}/>
+         <button type="button" className="bg-fuchsia-500 w-24 rounded-4xl" onClick={handleadd}>Ok </button>
        </div>
       
-        <ToDoitem taskitem={task} adder={flag} />    
-             
+        <ToDoitem taskitem={task} adder={flag}/>    
+        
       <Footer/> 
     </div>
   )
