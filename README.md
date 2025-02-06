@@ -1,8 +1,8 @@
-# React + Vite
+# Simple Tasklist app
+# User will add a task in the input box.
+# Pressing ok will give the option to Add/Edit or delete the task.
+# If task is added, an alert message will appear on the screen confirming the addition of the task.
+# If user will add the task, the task will be added as "Pending" status .
+# upon display task , user will be able to mark is as complete if the task has completed.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

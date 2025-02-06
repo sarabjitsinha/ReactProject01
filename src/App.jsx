@@ -28,7 +28,7 @@ import Footer from "./components/Footer";
     
       <div className="tododiv">
       <Header/>
-      <div className="mt-10">
+      <div className="mt-10 mb-16">
          <input type="text" name="task"  id="task" placeholder="Enter The task" className="bg-white w-96" onChange={handleChange}/>
          <button type="button" className="bg-fuchsia-500 w-24 rounded-4xl" onClick={handleadd}>Ok </button>
        </div>
