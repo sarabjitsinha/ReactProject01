@@ -6,4 +6,5 @@
 # If user will add the task, the task will be added as "Pending" status .
 # upon display task , user will be able to mark is as complete if the task has completed.
 # Technologies used html,css,tailwind css, javascript
-# Reacr library
+# React library.
+# Github link https://github.com/sarabjitsinha/ReactProject01
